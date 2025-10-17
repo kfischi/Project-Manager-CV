@@ -1,309 +1,319 @@
 <!DOCTYPE html>
 <html lang="he" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>כפיר שילדר - מנהל פרויקטים בכיר</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: "Arial", sans-serif;
-            max-width: 210mm;
-            margin: 0 auto;
-            padding: 15px;
-            line-height: 1.35;
-            color: #333;
-            direction: rtl;
-            font-size: 11.5px;
-        }
-        
-        .header {
-            text-align: right;
-            margin-bottom: 15px;
-            border-bottom: 2px solid #2c5282;
-            padding-bottom: 10px;
-        }
-        
-        .name {
-            font-size: 24px;
-            font-weight: bold;
-            margin-bottom: 3px;
-            color: #1a365d;
-        }
-        
-        .title {
-            font-size: 14px;
-            margin-bottom: 5px;
-            color: #2c5282;
-        }
-        
-        .contact {
-            font-size: 12px;
-            color: #555;
-            display: flex;
-            gap: 15px;
-        }
-        
-        .section-title {
-            color: #2c5282;
-            font-weight: bold;
-            font-size: 13px;
-            margin-top: 12px;
-            margin-bottom: 8px;
-            border-bottom: 1px solid #2c5282;
-            padding-bottom: 2px;
-        }
-        
-        .summary {
-            font-size: 11px;
-            text-align: justify;
-            margin-bottom: 10px;
-            background-color: #f8f9fa;
-            padding: 8px;
-            border-right: 3px solid #2c5282;
-            line-height: 1.45;
-        }
-        
-        .job {
-            margin-bottom: 10px;
-            padding-right: 8px;
-            border-right: 2px solid #e2e8f0;
-        }
-        
-        .job-header {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 3px;
-        }
-        
-        .job-title-company {
-            font-size: 12px;
-        }
-        
-        .job-title {
-            font-weight: bold;
-            color: #1a365d;
-        }
-        
-        .job-company {
-            color: #2c5282;
-            font-weight: 600;
-        }
-        
-        .job-date {
-            font-size: 11px;
-            color: #718096;
-        }
-        
-        .job-details {
-            font-size: 11px;
-            color: #2d3748;
-            line-height: 1.4;
-            margin-top: 3px;
-        }
-        
-        .skills-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 12px;
-            margin-bottom: 10px;
-        }
-        
-        .skills-category {
-            font-size: 11px;
-            line-height: 1.5;
-            margin-bottom: 6px;
-        }
-        
-        .skills-category strong {
-            color: #1a365d;
-            display: inline;
-        }
-        
-        .education-languages {
-            display: flex;
-            gap: 25px;
-        }
-        
-        .education-section {
-            flex: 2;
-        }
-        
-        .languages-section {
-            flex: 1;
-        }
-        
-        .education-item {
-            font-size: 11px;
-            margin-bottom: 4px;
-        }
-        
-        .education-title {
-            font-weight: bold;
-            color: #2d3748;
-        }
-        
-        .languages {
-            font-size: 11px;
-            line-height: 1.6;
-        }
-        
-        .highlight {
-            background-color: #fef5e7;
-            padding: 0 2px;
-        }
-        
-        strong {
-            font-weight: 600;
-        }
-        
-        @media print {
-            body { 
-                margin: 0;
-                padding: 10mm;
-                max-width: 100%;
-            }
-            .section-title { 
-                color: #000 !important;
-            }
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>כפיר שילדר - מנהל פרויקטים בכיר</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: "Arial", sans-serif;
+            max-width: 210mm;
+            margin: 0 auto;
+            padding: 15px;
+            line-height: 1.35;
+            color: #333;
+            direction: rtl;
+            font-size: 11.5px;
+        }
+        
+        .header {
+            text-align: right;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #2c5282;
+            padding-bottom: 10px;
+        }
+        
+        .name {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 3px;
+            color: #1a365d;
+        }
+        
+        .title {
+            font-size: 14px;
+            margin-bottom: 5px;
+            color: #2c5282;
+        }
+        
+        .contact {
+            font-size: 12px;
+            color: #555;
+            display: flex;
+            gap: 15px;
+        }
+        
+        .section-title {
+            color: #2c5282;
+            font-weight: bold;
+            font-size: 13px;
+            margin-top: 12px;
+            margin-bottom: 8px;
+            border-bottom: 1px solid #2c5282;
+            padding-bottom: 2px;
+        }
+        
+        .summary {
+            font-size: 11px;
+            text-align: justify;
+            margin-bottom: 10px;
+            background-color: #f8f9fa;
+            padding: 8px;
+            border-right: 3px solid #2c5282;
+            line-height: 1.45;
+        }
+        
+        .job {
+            margin-bottom: 10px;
+            padding-right: 8px;
+            border-right: 2px solid #e2e8f0;
+        }
+        
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 3px;
+        }
+        
+        .job-title-company {
+            font-size: 12px;
+        }
+        
+        .job-title {
+            font-weight: bold;
+            color: #1a365d;
+        }
+        
+        .job-company {
+            color: #2c5282;
+            font-weight: 600;
+        }
+        
+        .job-date {
+            font-size: 11px;
+            color: #718096;
+        }
+        
+        .job-details {
+            font-size: 11px;
+            color: #2d3748;
+            line-height: 1.4;
+            margin-top: 3px;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            margin-bottom: 10px;
+        }
+        
+        .skills-category {
+            font-size: 11px;
+            line-height: 1.5;
+            margin-bottom: 6px;
+        }
+        
+        .skills-category strong {
+            color: #1a365d;
+            display: inline;
+        }
+        
+        .education-languages {
+            display: flex;
+            gap: 25px;
+            margin-bottom: 10px;
+        }
+        
+        .education-section {
+            flex: 2;
+        }
+        
+        .languages-section {
+            flex: 1;
+        }
+        
+        .education-item {
+            font-size: 11px;
+            margin-bottom: 4px;
+        }
+        
+        .education-title {
+            font-weight: bold;
+            color: #2d3748;
+        }
+        
+        .languages {
+            font-size: 11px;
+            line-height: 1.6;
+        }
+        
+        .highlight {
+            background-color: #fef5e7;
+            padding: 0 2px;
+        }
+        
+        strong {
+            font-weight: 600;
+        }
+        
+        .military-service {
+            font-size: 11px;
+            margin-top: 10px;
+            color: #555;
+        }
+
+        
+        @media print {
+            body { 
+                margin: 0;
+                padding: 10mm;
+                max-width: 100%;
+            }
+            .section-title { 
+                color: #000 !important;
+            }
+        }
+    </style>
 </head>
 <body>
-    <div class="header">
-        <div class="name">כפיר שילדר</div>
-        <div class="title">מנהל פרויקטים בכיר | 10+ שנות ניסיון</div>
-        <div class="contact">
-            <span>📱 052-635-9513</span>
-            <span>✉️ kfir.biz@gmail.com</span>
-            <span>📍 גבעת חיים איחוד</span>
-            <span>🎓 PMP Track</span>
-        </div>
-    </div>
+    <div class="header">
+        <div class="name">כפיר שילדר</div>
+        <div class="title">מנהל פרויקטים בכיר | תשתיות, טכנולוגיה, אנרגיה ואוטומציה | 10+ שנות ניסיון</div>
+        <div class="contact">
+            <span>📱 972-52-635-9513</span>
+            <span>✉️ kfir.biz@gmail.com</span>
+            <span>📍 ישראל</span>
+            <span>🎓 PMP Track</span>
+        </div>
+    </div>
 
-    <div class="summary">
-        מנהל פרויקטים בכיר עם ניסיון עשיר בניהול פרויקטי תשתית בהיקף 7-20 מיליון דולר. מומחיות ב<span class="highlight">ניהול חוזים והתקשרויות</span>, 
-        <span class="highlight">בקרת קבלנים</span>, ממשקים רגולטוריים ותיעוד פרויקטים מורכבים. ניסיון מוכח בפרויקט עיר חכמה (20M$), 
-        חברות בינלאומיות גדולות והובלת פיילוטים חדשניים. רקע הנדסי, אנגלית ברמה גבוהה, יכולת עבודה בסביבה רב-תרבותית.
-    </div>
+    <div class="summary">
+        מנהל פרויקטים בכיר עם ניסיון עשיר בניהול פרויקטי תשתית בינלאומיים בהיקף 7-20 מיליון דולר. מומחיות ב<span class="highlight">ניהול חוזים והתקשרויות מורכבות</span>, 
+        <span class="highlight">בקרת קבלנים וספקים גלובליים</span>, ממשקים רגולטוריים ופיננסיים, ותיעוד פרויקטים קריטיים. ניסיון מוכח בניהול מחזור חיים מלא 
+        של פרויקטי Smart City, מערכות תקשורת ואנרגיה. בעל רקע הנדסי מוצק, מיומנויות הובלת צוותים רב-תרבותיים ו-**אנגלית ברמה מקצועית גבוהה**.
+    </div>
 
-    <div class="section-title">ניסיון מקצועי</div>
-    
-    <div class="job">
-        <div class="job-header">
-            <div class="job-title-company">
-                <span class="job-title">מנהל פרויקטים בכיר</span> | 
-                <span class="job-company">MER GROUP</span>
-            </div>
-            <span class="job-date">2024-2025</span>
-        </div>
-        <div class="job-details">
-            פרויקטים אסטרטגיים 7M$+ • <strong>ניהול חוזים והתקשרויות</strong> עם קבלנים בינלאומיים • 
-            <strong>בקרת איכות, לו"ז ותקציב</strong> של קבלני משנה • <strong>תיעוד מסמכי פרויקט</strong>: חוזים, רישיונות, הסכמי רכש ותחזוקה • 
-            ממשקים רגולטוריים ורשויות • ניהול סיכונים תפעוליים ומסחריים • הפעלת סעיפי אחריות
-        </div>
-    </div>
+    <div class="section-title">ניסיון מקצועי</div>
+    
+    <div class="job">
+        <div class="job-header">
+            <div class="job-title-company">
+                <span class="job-title">מנהל פרויקטים בכיר</span> | 
+                <span class="job-company">MER GROUP</span>
+            </div>
+            <span class="job-date">2024-2025</span>
+        </div>
+        <div class="job-details">
+            ניהול פרויקטי טכנולוגיה ותשתיות אסטרטגיים בהיקף **$3M** מול לקוחות אסטרטגיים • <strong>אחריות מלאה על מחזור חיי הפרויקט</strong>.
+            <strong>ניהול חוזים והתקשרויות</strong> מורכבות, בקרת תקציב ופיננסים שוטפים • הובלת צוותים רב-תחומיים (15+ אנשי צוות) וניהול ממשקים בכירים.
+        </div>
+    </div>
 
-    <div class="job">
-        <div class="job-header">
-            <div class="job-title-company">
-                <span class="job-title">מנהל פרויקטי תשתיות</span> | 
-                <span class="job-company">BSW GROUP</span>
-            </div>
-            <span class="job-date">2021-2024</span>
-        </div>
-        <div class="job-details">
-            פרויקטי תשתית IT ותקשורת באפריקה • ניהול תקציבים מורכבים ולוגיסטיקה בינלאומית • 
-            צוותים רב-תחומיים • ממשקים ממשלתיים ורגולטורים • מסירת פרויקטים בזמן ובתקציב • 
-            עמידה בסטנדרטים בינלאומיים
-        </div>
-    </div>
+    <div class="job">
+        <div class="job-header">
+            <div class="job-title-company">
+                <span class="job-title">מנהל פרויקטי תשתיות ו-IT אסטרטגיות</span> | 
+                <span class="job-company">BSW GROUP</span>
+            </div>
+            <span class="job-date">2021-2024</span>
+        </div>
+        <div class="job-details">
+            הובלת פרויקטי תשתיות IT ומערכות תקשורת באפריקה • ניהול לוגיסטיקה ושרשרת אספקה בינלאומית מורכבת.
+            תיאום וניהול ממשקים מול **גורמי ממשל ורגולציה** ביעדי הפרויקט • **הובלת תהליכי ייעול ושיפור תפעולי**.
+        </div>
+    </div>
 
-    <div class="job">
-        <div class="job-header">
-            <div class="job-title-company">
-                <span class="job-title">מנהל פרויקט עיר חכמה</span> | 
-                <span class="job-company">EYETECH SOLUTIONS</span>
-            </div>
-            <span class="job-date">2019-2020</span>
-        </div>
-        <div class="job-details">
-            <strong>פרויקט תשתית 20M$</strong> במרכז אמריקה • מערכות חשמל, תאורה חכמה ובקרה • 
-            <strong>בקרת קבלנים ראשיים ומשנה</strong> • ממשקי רשויות מקומיות ורגולטורים • 
-            צוותים רב-לאומיים • משא ומתן מורכב • <strong>פיילוטים באנרגיה חכמה</strong>
-        </div>
-    </div>
+    <div class="job">
+        <div class="job-header">
+            <div class="job-title-company">
+                <span class="job-title">מנהל פרויקט Smart City</span> | 
+                <span class="job-company">EYETECH SOLUTIONS</span>
+            </div>
+            <span class="job-date">2019-2020</span>
+        </div>
+        <div class="job-details">
+            **הובלה מוצלחת של פרויקט תשתיות חכמות בהיקף $20M** במרכז אמריקה • מערכות חשמל, תאורה ובקרה.
+            **ניהול ממשקים מורכבים מול רשויות מקומיות** • יישום מתודולוגיות **Agile/Waterfall** • ניהול משא ומתן מול קבלנים ראשיים.
+        </div>
+    </div>
 
-    <div class="job">
-        <div class="job-header">
-            <div class="job-title-company">
-                <span class="job-title">מנהל פרויקטים בינלאומי</span> | 
-                <span class="job-company">GLOBAL GROUP</span>
-            </div>
-            <span class="job-date">2017-2019</span>
-        </div>
-        <div class="job-details">
-            פרויקטי תשתית ושו"ב באפריקה • ניהול ספקים גלובליים והתקשרויות מורכבות • 
-            לוגיסטיקה ושרשרת אספקה • סביבה רב-תרבותית
-        </div>
-    </div>
+    <div class="job">
+        <div class="job-header">
+            <div class="job-title-company">
+                <span class="job-title">מנהל פרויקטים בינלאומי</span> | 
+                <span class="job-company">GLOBAL GROUP</span>
+            </div>
+            <span class="job-date">2017-2019</span>
+        </div>
+        <div class="job-details">
+            הובלת פרויקטים אסטרטגיים בתחום תשתיות קריטיות באפריקה • ניהול ספקים גלובליים והתקשרויות בהיקפי מיליונים.
+            פיתוח פתרונות לוגיסטיים מורכבים וניהול סיכונים תפעוליים בסביבות מאתגרות.
+        </div>
+    </div>
 
-    <div class="job">
-        <div class="job-header">
-            <div class="job-title-company">
-                <span class="job-title">מנהל פרויקטים ושירות</span> | 
-                <span class="job-company">אלדור טכנולוגיות</span>
-            </div>
-            <span class="job-date">2013-2017</span>
-        </div>
-        <div class="job-details">
-            פרויקטי תשתית תקשורת וחשמל • לקוחות: רפאל, מפא"ת, תע"ש, צה"ל • 
-            ניהול מחלקת שירות ותחזוקה • מערכות HLS
-        </div>
-    </div>
+    <div class="job">
+        <div class="job-header">
+            <div class="job-title-company">
+                <span class="job-title">מנהל פרויקטים ושירות</span> | 
+                <span class="job-company">אלדור טכנולוגיות תקשורת</span>
+            </div>
+            <span class="job-date">2013-2017</span>
+        </div>
+        <div class="job-details">
+            ניהול פרויקטי תשתיות ומערכות עבור לקוחות ביטחוניים (רפאל, מפא"ת, צה"ל) בסיווג גבוה.
+            ניהול מחלקת שירות טכני והובלת חוזי שירות אסטרטגיים.
+        </div>
+    </div>
 
-    <div class="section-title">כישורים מקצועיים</div>
-    <div class="skills-grid">
-        <div class="skills-category">
-            <strong>ניהול פרויקטים:</strong> ניהול חוזים והתקשרויות, בקרת קבלנים, ניהול תקציבים, תיעוד פרויקטים, ממשקים רגולטוריים, PMP Track, Agile, ניהול סיכונים, הובלת פיילוטים
-        </div>
-        <div class="skills-category">
-            <strong>כלים:</strong> MS Project, Excel מתקדם, PowerPoint, SAP ERP, JIRA, Smartsheet, Confluence, בקרת תקציב
-        </div>
-        <div class="skills-category">
-            <strong>תשתיות:</strong> פרויקטי תשתית מורכבים, עיר חכמה, מערכות חשמל ותקשורת, מערכות בקרה, תחזוקה תפעולית
-        </div>
-        <div class="skills-category">
-            <strong>יכולות עסקיות:</strong> ניהול בעלי עניין, משא ומתן מורכב, יחסי ספקים, בקרת איכות, לוגיסטיקה, דיווח ובקרה, שיפור תהליכים
-        </div>
-    </div>
+    <div class="section-title">כישורים מקצועיים</div>
+    <div class="skills-grid">
+        <div class="skills-category">
+            <strong>ניהול פרויקטים ומתודולוגיות:</strong> ניהול חוזים והתקשרויות, בקרת קבלנים וספקים גלובליים, **PMP Track**, **Agile/Scrum**, ניהול סיכונים, בקרה פיננסית.
+        </div>
+        <div class="skills-category">
+            <strong>כלים טכנולוגיים:</strong> **MS Project**, **JIRA**, Smartsheet, **SAP ERP**, Salesforce, Excel מתקדם, **Power BI**, Confluence.
+        </div>
+        <div class="skills-category">
+            <strong>תשתיות ותחומי התמחות:</strong> פרויקטי תשתית מורכבים, **Smart City**, מערכות אנרגיה, IT ותקשורת קריטית, **ניהול פרויקטי Multibrawn** (פרויקט אישי).
+        </div>
+        <div class="skills-category">
+            <strong>יכולות ניהוליות:</strong> הובלת צוותים רב-תחומיים (15+), **משא ומתן מורכב**, ניהול בעלי עניין בכירים, רכש גלובלי, שיפור תהליכים, יחסי אנוש מצוינים.
+        </div>
+    </div>
 
-    <div class="education-languages">
-        <div class="education-section">
-            <div class="section-title">השכלה והסמכות</div>
-            <div class="education-item">
-                <span class="education-title">ניהול פרויקטים PMP Track</span> | TEAM PM הרצליה | 2016-2017
-            </div>
-            <div class="education-item">
-                <span class="education-title">הנדסת אלקטרוניקה</span> | מכללת סאונד תל אביב | 2011-2013
-            </div>
-            <div class="education-item">
-                <span class="education-title">הכשרות מקצועיות</span> | שיווק דיגיטלי | 2012-2023
-            </div>
-        </div>
-        <div class="languages-section">
-            <div class="section-title">שפות</div>
-            <div class="languages">
-                <strong>עברית:</strong> שפת אם<br>
-                <strong>אנגלית:</strong> רמה גבוהה<br>
-                <strong>ספרדית:</strong> רמת עבודה
-            </div>
-        </div>
-    </div>
+    <div class="education-languages">
+        <div class="education-section">
+            <div class="section-title">השכלה והסמכות</div>
+            <div class="education-item">
+                <span class="education-title">ניהול פרויקטים PMP Track</span> | TEAM PM הרצליה | 2016-2017
+            </div>
+            <div class="education-item">
+                <span class="education-title">הנדסאי אלקטרוניקה</span> | מכללת סאונד תל אביב | 2011-2013
+            </div>
+            <div class="education-item">
+                <span class="education-title">הכשרות מקצועיות</span> | Agile, Scrum, ניהול סיכונים, Power BI | עדכני
+            </div>
+        </div>
+        <div class="languages-section">
+            <div class="section-title">שפות</div>
+            <div class="languages">
+                <strong>עברית:</strong> שפת אם<br>
+                <strong>אנגלית:</strong> רמה מקצועית גבוהה<br>
+                <strong>ספרדית:</strong> רמת עבודה
+            </div>
+        </div>
+    </div>
+    
+    <div class="section-title">שירות צבאי</div>
+    <div class="military-service">
+        <strong>מפעיל תקשורת, מכ"ם ונשק | חיל הים - אח"י דבורה</strong> | 1994-1997
+    </div>
 </body>
 </html>
