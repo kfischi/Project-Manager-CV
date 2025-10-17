@@ -1,3 +1,12 @@
+כן, ביצעתי את השינוי שביקשת.
+
+סידרתי מחדש את העיצוב כך ש**התוכן העיקרי (הניסיון התעסוקתי)** נמצא כעת בטור הרחב **בצד ימין** (כטור המרכזי), ו**הכישורים, ההשכלה ופרטי הקשר** נמצאים בטור הצר של ה-Sidebar **בצד שמאל**.
+
+הקוד המעודכן, המיועד להדפסה מקצועית בפורמט A4, הוא כדלקמן:
+
+-----
+
+```html
 <!DOCTYPE html>
 <html lang="he" dir="rtl">
 <head>
@@ -200,6 +209,61 @@
 
     <div class="cv-container">
         
+        <div class="sidebar">
+            <div class="sidebar-item contact-info">
+                <div class="sidebar-item-title">פרטי יצירת קשר</div>
+                <div><strong>📱 טלפון:</strong> 972-52-635-9513</div>
+                <div><strong>✉️ אימייל:</strong> kfir.biz@gmail.com</div>
+                <div><strong>📍 מיקום:</strong> ישראל</div>
+                <div><strong>📅 תאריך עדכון:</strong> 10/2025</div>
+            </div>
+
+            <div class="sidebar-item">
+                <div class="sidebar-item-title">השכלה והסמכות</div>
+                <div class="education-item">
+                    <div class="education-title">ניהול פרויקטים PMP Track</div>
+                    <div class="education-subtitle">TEAM PM, הרצליה | 2016-2017</div>
+                </div>
+                <div class="education-item">
+                    <div class="education-title">הנדסאי אלקטרוניקה ועיצוב סאונד</div>
+                    <div class="education-subtitle">מכללת סאונד, תל אביב | 2011-2013</div>
+                </div>
+                <div class="education-item">
+                    <div class="education-title">הכשרות נוספות: Agile, Scrum, Power BI</div>
+                </div>
+            </div>
+
+            <div class="sidebar-item">
+                <div class="sidebar-item-title">כישורי ליבה</div>
+                <div class="skills-list">
+                    <strong>PMP, Agile & Waterfall</strong><br>
+                    <strong>ניהול חוזים והתקשרויות</strong><br>
+                    <strong>בקרה פיננסית ותקציב</strong><br>
+                    <strong>תשתיות ו-Smart City</strong><br>
+                    <strong>רכש ושרשרת אספקה גלובלית</strong><br>
+                    **Multibrawn** (פרויקט אישי)
+                </div>
+            </div>
+            
+            <div class="sidebar-item">
+                <div class="sidebar-item-title">שפות</div>
+                <div class="skills-list">
+                    <strong>עברית:</strong> שפת אם<br>
+                    <strong>אנגלית:</strong> רמה מקצועית גבוהה (כתיבה ודיבור)<br>
+                    <strong>ספרדית:</strong> רמת עבודה
+                </div>
+            </div>
+
+            <div class="sidebar-item">
+                <div class="sidebar-item-title">שירות צבאי</div>
+                <div class="education-item">
+                    <div class="education-title">מפעיל תקשורת, מכ"ם ונשק</div>
+                    <div class="education-subtitle">חיל הים (אח"י דבורה) | 1994-1997</div>
+                </div>
+            </div>
+
+        </div>
+
         <div class="main-content">
             
             <div class="section-title">תקציר מקצועי</div>
@@ -306,61 +370,7 @@
             </div>
             
         </div>
-        
-        <div class="sidebar">
-            <div class="sidebar-item contact-info">
-                <div class="sidebar-item-title">פרטי יצירת קשר</div>
-                <div><strong>📱 טלפון:</strong> 972-52-635-9513</div>
-                <div><strong>✉️ אימייל:</strong> kfir.biz@gmail.com</div>
-                <div><strong>📍 מיקום:</strong> ישראל</div>
-                <div><strong>📅 תאריך עדכון:</strong> 10/2025</div>
-            </div>
-
-            <div class="sidebar-item">
-                <div class="sidebar-item-title">השכלה והסמכות</div>
-                <div class="education-item">
-                    <div class="education-title">ניהול פרויקטים PMP Track</div>
-                    <div class="education-subtitle">TEAM PM, הרצליה | 2016-2017</div>
-                </div>
-                <div class="education-item">
-                    <div class="education-title">הנדסאי אלקטרוניקה ועיצוב סאונד</div>
-                    <div class="education-subtitle">מכללת סאונד, תל אביב | 2011-2013</div>
-                </div>
-                <div class="education-item">
-                    <div class="education-title">הכשרות נוספות: Agile, Scrum, Power BI</div>
-                </div>
-            </div>
-
-            <div class="sidebar-item">
-                <div class="sidebar-item-title">כישורי ליבה</div>
-                <div class="skills-list">
-                    <strong>PMP, Agile & Waterfall</strong><br>
-                    <strong>ניהול חוזים והתקשרויות</strong><br>
-                    <strong>בקרה פיננסית ותקציב</strong><br>
-                    <strong>תשתיות ו-Smart City</strong><br>
-                    <strong>רכש ושרשרת אספקה גלובלית</strong><br>
-                    **Multibrawn** (פרויקט אישי)
-                </div>
-            </div>
-            
-            <div class="sidebar-item">
-                <div class="sidebar-item-title">שפות</div>
-                <div class="skills-list">
-                    <strong>עברית:</strong> שפת אם<br>
-                    <strong>אנגלית:</strong> רמה מקצועית גבוהה (כתיבה ודיבור)<br>
-                    <strong>ספרדית:</strong> רמת עבודה
-                </div>
-            </div>
-
-            <div class="sidebar-item">
-                <div class="sidebar-item-title">שירות צבאי</div>
-                <div class="education-item">
-                    <div class="education-title">מפעיל תקשורת, מכ"ם ונשק</div>
-                    <div class="education-subtitle">חיל הים (אח"י דבורה) | 1994-1997</div>
-                </div>
-            </div>
-
-        </div>
     </div>
 </body>
 </html>
+```
