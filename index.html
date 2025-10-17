@@ -15,62 +15,62 @@
             font-family: "Arial", sans-serif;
             max-width: 210mm;
             margin: 0 auto;
-            padding: 15px;
-            line-height: 1.35;
+            padding: 10px; /* הופחת ל-10px */
+            line-height: 1.3; /* דחיסת שורות */
             color: #333;
             direction: rtl;
-            font-size: 11.5px;
+            font-size: 11px; /* הופחת ל-11px */
         }
         
         .header {
             text-align: right;
-            margin-bottom: 15px;
-            border-bottom: 2px solid #2c5282;
-            padding-bottom: 10px;
+            margin-bottom: 12px; /* הופחת */
+            border-bottom: 1px solid #2c5282; /* הופחת עובי הקו */
+            padding-bottom: 5px; /* הופחת */
         }
         
         .name {
-            font-size: 24px;
+            font-size: 22px; /* הופחת קצת */
             font-weight: bold;
-            margin-bottom: 3px;
+            margin-bottom: 2px;
             color: #1a365d;
         }
         
         .title {
-            font-size: 14px;
-            margin-bottom: 5px;
+            font-size: 13px; /* הופחת קצת */
+            margin-bottom: 4px;
             color: #2c5282;
         }
         
         .contact {
-            font-size: 12px;
+            font-size: 11px; /* הופחת קצת */
             color: #555;
             display: flex;
-            gap: 15px;
+            gap: 10px; /* הופחת מרווח */
         }
         
         .section-title {
             color: #2c5282;
             font-weight: bold;
-            font-size: 13px;
-            margin-top: 12px;
-            margin-bottom: 8px;
+            font-size: 12.5px; /* הופחת קצת */
+            margin-top: 10px; /* הופחת */
+            margin-bottom: 6px; /* הופחת */
             border-bottom: 1px solid #2c5282;
-            padding-bottom: 2px;
+            padding-bottom: 1px;
         }
         
         .summary {
-            font-size: 11px;
+            font-size: 10.5px; /* הופחת */
             text-align: justify;
-            margin-bottom: 10px;
+            margin-bottom: 8px; /* הופחת */
             background-color: #f8f9fa;
-            padding: 8px;
+            padding: 6px; /* הופחת */
             border-right: 3px solid #2c5282;
-            line-height: 1.45;
+            line-height: 1.4; /* דחוס קצת */
         }
         
         .job {
-            margin-bottom: 10px;
+            margin-bottom: 8px; /* הופחת */
             padding-right: 8px;
             border-right: 2px solid #e2e8f0;
         }
@@ -78,11 +78,11 @@
         .job-header {
             display: flex;
             justify-content: space-between;
-            margin-bottom: 3px;
+            margin-bottom: 2px; /* הופחת */
         }
         
         .job-title-company {
-            font-size: 12px;
+            font-size: 11.5px; /* הופחת קצת */
         }
         
         .job-title {
@@ -96,28 +96,28 @@
         }
         
         .job-date {
-            font-size: 11px;
+            font-size: 10.5px; /* הופחת */
             color: #718096;
         }
         
         .job-details {
-            font-size: 11px;
+            font-size: 10.5px; /* הופחת */
             color: #2d3748;
-            line-height: 1.4;
-            margin-top: 3px;
+            line-height: 1.35; /* דחוס קצת */
+            margin-top: 2px; /* הופחת */
         }
         
         .skills-grid {
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 12px;
-            margin-bottom: 10px;
+            grid-template-columns: 1fr 1fr 1fr; /* שונה ל-3 עמודות */
+            gap: 8px; /* הופחת */
+            margin-bottom: 8px; /* הופחת */
         }
         
         .skills-category {
-            font-size: 11px;
-            line-height: 1.5;
-            margin-bottom: 6px;
+            font-size: 10.5px; /* הופחת */
+            line-height: 1.4; /* דחוס קצת */
+            margin-bottom: 0px;
         }
         
         .skills-category strong {
@@ -127,12 +127,12 @@
         
         .education-languages {
             display: flex;
-            gap: 25px;
-            margin-bottom: 10px;
+            gap: 20px; /* הופחת */
+            margin-bottom: 5px; /* הופחת */
         }
         
         .education-section {
-            flex: 2;
+            flex: 2.5; /* הגדלת החלק של ההשכלה */
         }
         
         .languages-section {
@@ -140,8 +140,8 @@
         }
         
         .education-item {
-            font-size: 11px;
-            margin-bottom: 4px;
+            font-size: 10.5px; /* הופחת */
+            margin-bottom: 3px; /* הופחת */
         }
         
         .education-title {
@@ -150,8 +150,8 @@
         }
         
         .languages {
-            font-size: 11px;
-            line-height: 1.6;
+            font-size: 10.5px; /* הופחת */
+            line-height: 1.5;
         }
         
         .highlight {
@@ -164,20 +164,23 @@
         }
         
         .military-service {
-            font-size: 11px;
-            margin-top: 10px;
+            font-size: 10.5px; /* הופחת */
+            margin-top: 5px; /* הופחת */
             color: #555;
         }
 
-        
+        /* כללי הדפסה ספציפיים */
         @media print {
             body { 
                 margin: 0;
-                padding: 10mm;
+                padding: 5mm; /* שולי הדפסה מינימליים */
                 max-width: 100%;
             }
             .section-title { 
                 color: #000 !important;
+            }
+            a {
+                text-decoration: none; /* להסיר קווים תחתונים */
             }
         }
     </style>
@@ -211,8 +214,8 @@
             <span class="job-date">2024-2025</span>
         </div>
         <div class="job-details">
-            ניהול פרויקטי טכנולוגיה ותשתיות אסטרטגיים בהיקף **$3M** מול לקוחות אסטרטגיים • <strong>אחריות מלאה על מחזור חיי הפרויקט</strong>.
-            <strong>ניהול חוזים והתקשרויות</strong> מורכבות, בקרת תקציב ופיננסים שוטפים • הובלת צוותים רב-תחומיים (15+ אנשי צוות) וניהול ממשקים בכירים.
+            ניהול פרויקטי טכנולוגיה ותשתיות אסטרטגיים בהיקף **$3M** • <strong>אחריות מלאה על מחזור חיי הפרויקט</strong>.
+            <strong>ניהול חוזים והתקשרויות מורכבות</strong>, בקרת תקציב ופיננסים • הובלת צוותים רב-תחומיים (15+).
         </div>
     </div>
 
@@ -225,8 +228,8 @@
             <span class="job-date">2021-2024</span>
         </div>
         <div class="job-details">
-            הובלת פרויקטי תשתיות IT ומערכות תקשורת באפריקה • ניהול לוגיסטיקה ושרשרת אספקה בינלאומית מורכבת.
-            תיאום וניהול ממשקים מול **גורמי ממשל ורגולציה** ביעדי הפרויקט • **הובלת תהליכי ייעול ושיפור תפעולי**.
+            הובלת פרויקטי תשתיות IT ומערכות תקשורת באפריקה • ניהול לוגיסטיקה ושרשרת אספקה בינלאומית.
+            תיאום וניהול ממשקים מול **גורמי ממשל ורגולציה** • **הובלת תהליכי ייעול ושיפור תפעולי**.
         </div>
     </div>
 
@@ -239,7 +242,7 @@
             <span class="job-date">2019-2020</span>
         </div>
         <div class="job-details">
-            **הובלה מוצלחת של פרויקט תשתיות חכמות בהיקף $20M** במרכז אמריקה • מערכות חשמל, תאורה ובקרה.
+            **הובלה מוצלחת של פרויקט תשתיות חכמות בהיקף $20M** במרכז אמריקה.
             **ניהול ממשקים מורכבים מול רשויות מקומיות** • יישום מתודולוגיות **Agile/Waterfall** • ניהול משא ומתן מול קבלנים ראשיים.
         </div>
     </div>
@@ -275,16 +278,13 @@
     <div class="section-title">כישורים מקצועיים</div>
     <div class="skills-grid">
         <div class="skills-category">
-            <strong>ניהול פרויקטים ומתודולוגיות:</strong> ניהול חוזים והתקשרויות, בקרת קבלנים וספקים גלובליים, **PMP Track**, **Agile/Scrum**, ניהול סיכונים, בקרה פיננסית.
+            <strong>ניהול פרויקטים:</strong> ניהול חוזים, בקרת קבלנים וספקים, **PMP Track**, **Agile/Scrum/Kanban**, ניהול סיכונים, בקרה פיננסית.
         </div>
         <div class="skills-category">
-            <strong>כלים טכנולוגיים:</strong> **MS Project**, **JIRA**, Smartsheet, **SAP ERP**, Salesforce, Excel מתקדם, **Power BI**, Confluence.
+            <strong>תשתיות/תחומים:</strong> **Smart City**, אנרגיה, IT ותקשורת קריטית, תשתיות מורכבות, **פרויקטי Multibrawn**.
         </div>
         <div class="skills-category">
-            <strong>תשתיות ותחומי התמחות:</strong> פרויקטי תשתית מורכבים, **Smart City**, מערכות אנרגיה, IT ותקשורת קריטית, **ניהול פרויקטי Multibrawn** (פרויקט אישי).
-        </div>
-        <div class="skills-category">
-            <strong>יכולות ניהוליות:</strong> הובלת צוותים רב-תחומיים (15+), **משא ומתן מורכב**, ניהול בעלי עניין בכירים, רכש גלובלי, שיפור תהליכים, יחסי אנוש מצוינים.
+            <strong>כלים/ניהול:</strong> **MS Project**, **JIRA**, Smartsheet, **SAP ERP**, Salesforce, Excel מתקדם, **Power BI**, משא ומתן.
         </div>
     </div>
 
@@ -295,25 +295,23 @@
                 <span class="education-title">ניהול פרויקטים PMP Track</span> | TEAM PM הרצליה | 2016-2017
             </div>
             <div class="education-item">
-                <span class="education-title">הנדסאי אלקטרוניקה</span> | מכללת סאונד תל אביב | 2011-2013
+                <span class="education-title">הנדסאי אלקטרוניקה ועיצוב סאונד</span> | מכללת סאונד תל אביב | 2011-2013
             </div>
             <div class="education-item">
                 <span class="education-title">הכשרות מקצועיות</span> | Agile, Scrum, ניהול סיכונים, Power BI | עדכני
             </div>
         </div>
         <div class="languages-section">
-            <div class="section-title">שפות</div>
+            <div class="section-title">שפות ושירות צבאי</div>
             <div class="languages">
                 <strong>עברית:</strong> שפת אם<br>
                 <strong>אנגלית:</strong> רמה מקצועית גבוהה<br>
                 <strong>ספרדית:</strong> רמת עבודה
             </div>
+            <div class="military-service">
+                <strong>צבא:</strong> מפעיל תקשורת, מכ"ם ונשק | חיל הים (1994-1997)
+            </div>
         </div>
-    </div>
-    
-    <div class="section-title">שירות צבאי</div>
-    <div class="military-service">
-        <strong>מפעיל תקשורת, מכ"ם ונשק | חיל הים - אח"י דבורה</strong> | 1994-1997
     </div>
 </body>
 </html>
